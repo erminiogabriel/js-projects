@@ -1,0 +1,15 @@
+body{
+    padding:0px;
+    margin:0px;
+    background: rgb(80,80,80) ;
+    overflow: hidden;
+  }
+  canvas{
+    background:white;
+    position:absolute;
+    top:100%;
+    left:50%;
+    transform:translate(-50%,-100%);
+    width:100vmax;
+    height:100vmax;
+  }  
