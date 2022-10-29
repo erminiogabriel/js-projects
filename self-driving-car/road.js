@@ -1,4 +1,4 @@
-import lerp from './utils';
+import { lerp } from './utils.js';
 
 export default class Road {
   constructor(x, width, laneCount = 3) {
