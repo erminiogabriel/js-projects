@@ -1,2 +1,4 @@
 node_modules
 packacge-lock.json
+drawing-recognition/data/dataset
+portfolio.txt
