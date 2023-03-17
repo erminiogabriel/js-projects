@@ -1,0 +1,64 @@
+https://github.com/radendi/react-portfolio-2
+https://dama.ink/#skills
+
+https://tamalsen.dev
+
+https://github.com/bchiang7/v4
+https://brittanychiang.com/#about
+
+https://dunks1980.com
+
+
+1: 
+Hello, my name is Gabriel Machado. I am a backend developer with experience in building and deploying complete applications. I have a passion for learning and I am currently studying new technologies, including TypeScript and some machine learning. My focus is on building reliable, scalable, and secure software solutions that help businesses and organizations achieve their goals.
+
+2:
+Hello, my name is [Your Name] and I enjoy creating software solutions for the web. I graduated with a technical degree in 'Informática para internet', with a focus on web development. My journey in software development began with PHP and Laravel, but I have since expanded my skills to include other technologies, such as Python, Flask, JavaScript, React, Node.js, TypeScript, and databases like PostgreSQL and MongoDB.
+
+Throughout my career, I have had the opportunity to work on various projects ranging from small-scale applications to enterprise-level systems. My main focus these days is building reliable and scalable products that help businesses achieve their goals. My experience with different technologies has taught me the importance of continuous learning and the value of staying up-to-date with the latest industry trends and best practices.
+
+2 (alternative):
+"Hello, my name is Gabriel Erminio Machado and I am passionate about creating software solutions for the web. I graduated with a technical degree in 'Informática para internet', with a focus on web development, and have since expanded my skills to include various technologies, such as Python, Flask, JavaScript, React, Node.js, TypeScript, and databases like PostgreSQL and MongoDB.
+
+My journey in software development began with PHP and Laravel, but I quickly realized my love for Linux-based systems. I have extensive experience providing support for Linux-based devices, often via SSH. I was also responsible for configuring production servers, ensuring their reliability and security.
+
+Throughout my career, I have had the opportunity to work on a wide range of projects, from small-scale applications to enterprise-level systems. My main focus these days is building reliable and scalable products that help businesses achieve their goals. My experience with different technologies and Linux-based systems has taught me the importance of continuous learning and staying up-to-date with the latest industry trends and best practices."
+
+
+
+
+
+https://www.godaddy.com/
+
+free hosting:
+aws?
+https://www.back4app.com/signup
+https://supabase.com/pricing
+
+google cloud run
+https://cloud.google.com/run?hl=pt-br
+
+Vercel: Vercel is a popular platform for hosting Next.js apps. It offers a free plan with unlimited deployments, custom domains, and automatic SSL. You can also use Vercel to host serverless functions.
+
+Netlify: Netlify is another popular option for hosting Next.js apps. It offers a free plan with continuous deployment, custom domains, and automatic SSL. You can also use Netlify to host serverless functions.
+
+Heroku: Heroku is a cloud platform that supports many programming languages, including Node.js (which is what Next.js is built on). Heroku offers a free plan with a limited amount of resources, but it should be sufficient for small Next.js apps.
+
+Firebase: Firebase is a mobile and web application development platform that offers hosting for web apps. It offers a free plan with 1GB of storage, 10GB of data transfer, and hosting for one website.
+
+GitHub Pages: If your Next.js app is open source, you can use GitHub Pages to host it for free. GitHub Pages is a static site hosting service that allows you to host websites directly from a GitHub repository.
+
+
+
+NETLIFY MELHOR OPCAO!
+
+
+cheatshet:
+https://overapi.com/javascript
+https://lecoupa.github.io/awesome-cheatsheets/
+https://github.com/LeCoupa/awesome-cheatsheets/blob/master/tools/docker.sh
+https://github.com/LeCoupa/awesome-cheatsheets/blob/master/frontend/html5.html
+https://github.com/LeCoupa/awesome-cheatsheets/blob/master/backend/node.js
+https://github.com/LeCoupa/awesome-cheatsheets/blob/master/languages/javascript.js
+https://gitsheet.wtf
+https://devhints.io
