@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import { StyledExperienceSection } from '@/styles/experience';
+import { StyledExperienceSection } from '@/styles/components/experience';
 import Zoom from 'react-reveal/Zoom';
 
 export default function Experience() {

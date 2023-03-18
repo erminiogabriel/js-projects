@@ -11,7 +11,7 @@ export default class Sensor {
     this.readings = [];
   }
 
-  #castRays() {
+  castRays() {
     this.rays = [];
     for (let i = 0; i < this.rayCount; i += 1) {
       const rayAngle = lerp(
@@ -29,7 +29,7 @@ export default class Sensor {
     }
   }
 
-  #getReading(ray, roadBorders, traffic) {
+  getReading(ray, roadBorders, traffic) {
     const touches = [];
     for (let i = 0; i < roadBorders.length; i += 1) {
       const touch = getIntersection(ray[0], ray[1], roadBorders[i][0], roadBorders[i][1]);
@@ -57,11 +57,11 @@ export default class Sensor {
   }
 
   update(roadBorders, traffic) {
-    this.#castRays();
+    this.castRays();
     this.readings = [];
     for (let i = 0; i < this.rays.length; i += 1) {
       this.readings.push(
-        this.#getReading(this.rays[i], roadBorders, traffic),
+        this.getReading(this.rays[i], roadBorders, traffic),
       );
     }
   }

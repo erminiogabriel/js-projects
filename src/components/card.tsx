@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyledCardLink } from '@/styles/card';
+import { StyledCardLink } from '@/styles/components/card';
 import Image from 'next/image';
 
 type CardProps = {
@@ -8,11 +8,12 @@ type CardProps = {
   title:string;
   description1:string;
   description2?:string;
+  link:string;
 }
 
 export default function Card(props: CardProps) {
   return (
-    <StyledCardLink href='/static/media/dicoding-js.0d9f522f2e7d05619f4e.png'>
+    <StyledCardLink href={props.link}>
         <div className='out-div'>
             <Image width={500} height={500} className='image' src={props.image_src} alt={props.image_alt}/>
             <div className='inner-div'>

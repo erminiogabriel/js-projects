@@ -9,12 +9,12 @@ export default class Level {
       this.weights[i] = new Array(outputCount);
     }
 
-    const { weights, biases } = (Level.#randomize(this));
+    const { weights, biases } = (Level.randomize(this));
     this.weights = weights;
     this.biases = biases;
   }
 
-  static #randomize(level) {
+  static randomize(level) {
     const weights = [];
     const biases = [];
     for (let i = 0; i < level.inputs.length; i += 1) {

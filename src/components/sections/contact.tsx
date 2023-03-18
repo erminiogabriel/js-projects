@@ -1,7 +1,7 @@
 import React from 'react';
 import { BsGithub, BsLinkedin } from 'react-icons/bs';
 import { FiMail } from 'react-icons/fi';
-import { StyledContactSection } from '@/styles/contact';
+import { StyledContactSection } from '@/styles/components/contact';
 import Zoom from 'react-reveal/Zoom';
 
 export default function Contact() {

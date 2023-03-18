@@ -43,8 +43,8 @@ export default class Visualizer {
     for (let i = 0; i < inputs.length; i += 1) {
       for (let j = 0; j < outputs.length; j += 1) {
         ctx.beginPath();
-        ctx.moveTo(Visualizer.#getNodeX(inputs, i, left, right), bottom);
-        ctx.lineTo(Visualizer.#getNodeX(outputs, j, left, right), top);
+        ctx.moveTo(Visualizer.getNodeX(inputs, i, left, right), bottom);
+        ctx.lineTo(Visualizer.getNodeX(outputs, j, left, right), top);
         ctx.lineWidth = 2;
         ctx.strokeStyle = getRGBA(weights[i][j]);
         ctx.stroke();
@@ -52,7 +52,7 @@ export default class Visualizer {
     }
 
     for (let i = 0; i < inputs.length; i += 1) {
-      const x = Visualizer.#getNodeX(inputs, i, left, right);
+      const x = Visualizer.getNodeX(inputs, i, left, right);
 
       ctx.beginPath();
       ctx.arc(x, bottom, nodeRadius, 0, Math.PI * 2);
@@ -66,7 +66,7 @@ export default class Visualizer {
     }
 
     for (let i = 0; i < outputs.length; i += 1) {
-      const x = Visualizer.#getNodeX(outputs, i, left, right);
+      const x = Visualizer.getNodeX(outputs, i, left, right);
 
       ctx.beginPath();
       ctx.arc(x, top, nodeRadius, 0, Math.PI * 2);
@@ -99,7 +99,7 @@ export default class Visualizer {
     }
   }
 
-  static #getNodeX(nodes, index, left, right) {
+  static getNodeX(nodes, index, left, right) {
     return lerp(left, right, nodes.length === 1 ? 0.5 : index / (nodes.length - 1));
   }
 }

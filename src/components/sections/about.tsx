@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { StyledAboutSection } from '@/styles/about';
+import { StyledAboutSection } from '@/styles/components/about';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import Image from 'next/image';
 import code from '../../../public/code.png';

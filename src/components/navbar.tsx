@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyledNavbar } from '@/styles/navbar';
+import { StyledNavbar } from '@/styles/components/navbar';
 
 export default function Navbar() {
 
