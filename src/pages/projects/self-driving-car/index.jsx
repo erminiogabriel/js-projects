@@ -180,7 +180,10 @@ export default function SelfDrivingCarPage() {
                         <option value="1">1</option>
                         <option value="10">10</option>
                         <option value="100">100</option>
+                        <option value="500">500</option>
                         <option value="1000">1000</option>
+                        <option value="1500">1500</option>
+                        <option value="2000">2000</option>
                     </select>
                 </div>
                 <div className="dropdown">

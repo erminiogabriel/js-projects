@@ -9,11 +9,12 @@ type CardProps = {
   description1:string;
   description2?:string;
   link:string;
+  target?:string;
 }
 
 export default function Card(props: CardProps) {
   return (
-    <StyledCardLink href={props.link}>
+    <StyledCardLink target={props.target} href={props.link}>
         <div className='out-div'>
             <Image width={500} height={500} className='image' src={props.image_src} alt={props.image_alt}/>
             <div className='inner-div'>
