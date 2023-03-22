@@ -1,7 +1,7 @@
 import React from 'react';
-import { StyledWorkSection } from '@/styles/components/work';
-import Card from '../card';
+import StyledWorkSection from '@/styles/components/work';
 import Zoom from 'react-reveal/Zoom';
+import Card from '../card';
 
 export default function Work() {
   return (

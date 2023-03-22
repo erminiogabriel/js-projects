@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const StyledExperienceSection = styled.section`
+const StyledExperienceSection = styled.section`
 display: flex;
 flex-direction: column;
 justify-content: center;
@@ -43,3 +43,5 @@ h2 {
   font-size: 60px;
 }
 `;
+
+export default StyledExperienceSection;

@@ -1,23 +1,21 @@
-import { useRef, useEffect } from "react";
+import { useEffect } from 'react';
 
 function CarCanvas({ data, canvasRef }) {
-
   useEffect(() => {
     const canvas = canvasRef.current;
     canvas.width = 300;
     canvas.height = window.innerHeight;
   }, []);
 
-
   useEffect(() => {
     const canvas = canvasRef.current;
-    const ctx = canvas.getContext("2d");
+    const ctx = canvas.getContext('2d');
     canvas.height = window.innerHeight;
-    
+
     if (ctx && data) {
-      if (data.cars && data.road && data.traffic){
+      if (data.cars && data.road && data.traffic) {
         const bestCar = data.cars.find((c) => c.y === Math.min(...data.cars.map((d) => d.y)));
-        ctx.save()
+        ctx.save();
         ctx.translate(0, -bestCar.y + canvas.height * 0.7);
         data.road.draw(ctx);
 
@@ -42,7 +40,7 @@ function CarCanvas({ data, canvasRef }) {
     }
   }, [data]);
 
-  return <canvas style={{background:'lightgray'}} ref={canvasRef} />;
+  return <canvas style={{ background: 'lightgray' }} ref={canvasRef} />;
 }
 
 export default CarCanvas;

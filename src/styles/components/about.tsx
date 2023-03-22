@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const StyledAboutSection = styled.section`
+const StyledAboutSection = styled.section`
 display: flex;
 flex-direction: column;
 justify-content: center;
@@ -36,3 +36,5 @@ p {
   font-size: 1.2rem;
 }
 `;
+
+export default StyledAboutSection;

@@ -1,9 +1,8 @@
-import React, { useEffect, useRef } from 'react';
-import { StyledExperienceSection } from '@/styles/components/experience';
+import React from 'react';
+import StyledExperienceSection from '@/styles/components/experience';
 import Zoom from 'react-reveal/Zoom';
 
 export default function Experience() {
-  
   return (
     <Zoom>
     <StyledExperienceSection id='experience'>
@@ -27,7 +26,7 @@ export default function Experience() {
           </div>
 
         <div className='technologies'>
-          <p>Here are a few technologies I’ve been working with: <br /><br /></p>
+          <p>Here are a few technologies I&apos;ve been working with: <br /><br /></p>
           <ul>
             <li>JavaScript</li>
             <li>TypeScript</li>

@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const StyledWorkSection = styled.section`
+const StyledWorkSection = styled.section`
 min-height: 60vh;
 padding: 0;
 h3 {
@@ -42,3 +42,5 @@ h2 {
 }
 }
 `;
+
+export default StyledWorkSection;

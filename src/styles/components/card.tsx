@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const StyledCardLink = styled.a`
+const StyledCardLink = styled.a`
 display: inline-block;
 vertical-align: middle;
 -webkit-transform: perspective(1px) translateZ(0);
@@ -44,3 +44,5 @@ transition-timing-function: ease-out;
 margin-top: 0.5rem;
 }
 `;
+
+export default StyledCardLink;

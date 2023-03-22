@@ -3,7 +3,11 @@
         "browser": true,
         "es2021": true
     },
-    "extends": "airbnb-base",
+    "extends": [
+        "next",
+        "next/core-web-vitals",
+        "airbnb-base"
+    ],
     "overrides": [
     ],
     "parserOptions": {
@@ -11,5 +15,6 @@
         "sourceType": "module"
     },
     "rules": {
+        "import/extensions": "off"
     }
 }

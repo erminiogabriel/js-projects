@@ -1,8 +1,7 @@
-import { useEffect } from "react";
-import Visualizer from './visualizer.js';
+import { useEffect } from 'react';
+import Visualizer from '@/utils/self-driving-car/visualizer.js';
 
 function NetworkCanvas({ data, canvasRef }) {
-
   useEffect(() => {
     const canvas = canvasRef.current;
     canvas.width = 700;
@@ -11,16 +10,16 @@ function NetworkCanvas({ data, canvasRef }) {
 
   useEffect(() => {
     const canvas = canvasRef.current;
-    const ctx = canvas.getContext("2d");
+    const ctx = canvas.getContext('2d');
     canvas.height = window.innerHeight;
 
     if (ctx && data) {
-      ctx.lineDashOffset = data.offset
+      ctx.lineDashOffset = data.offset;
       Visualizer.drawNetwork(ctx, data.bestCar.brain);
     }
   }, [data]);
 
-  return <canvas style={{background:'black'}} ref={canvasRef} />;
+  return <canvas style={{ background: 'black' }} ref={canvasRef} />;
 }
 
 export default NetworkCanvas;

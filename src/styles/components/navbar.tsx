@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const StyledNavbar = styled.nav`
+const StyledNavbar = styled.nav`
 position: fixed;
 top: 0;
 right: 0;
@@ -120,3 +120,5 @@ background-color: transparent;
 -webkit-text-decoration-skip: objects;
 }
 `;
+
+export default StyledNavbar;

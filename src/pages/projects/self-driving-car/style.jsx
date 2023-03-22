@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const StyledSelfDrivingCar = styled.div`
+const StyledSelfDrivingCar = styled.div`
     margin:0;
     background: darkgray;
     overflow:hidden;
@@ -39,3 +39,5 @@ button:hover{
     background:black;
 }
 `;
+
+export default StyledSelfDrivingCar;

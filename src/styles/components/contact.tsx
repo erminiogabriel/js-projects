@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const StyledContactSection = styled.footer`
+const StyledContactSection = styled.footer`
 display: flex;
 flex-direction: column;
 justify-content: center;
@@ -25,3 +25,5 @@ div a {
     margin: 0 5px;
 }
 `;
+
+export default StyledContactSection;

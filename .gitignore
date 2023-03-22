@@ -1,7 +1,6 @@
 node_modules
 packacge-lock.json
-drawing-recognition/data/dataset
-next-app/js-projects/portfolio.txt
+temp_projects/drawing-recognition/data/dataset/img
 
 
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
