@@ -11,7 +11,7 @@ padding: 0;
   display: flex;
 }
 ul{
-  columns: 2;  
+  columns: 2;
   -webkit-columns: 2;
   -moz-columns: 2;
 }
@@ -42,6 +42,15 @@ h2 {
   margin-top: 5px;
   font-size: 60px;
 }
+
+@media (max-width: 775px) {
+  ul{
+    columns: 1;
+    -webkit-columns: 1;
+    -moz-columns: 1;
+  }
+}
+
 `;
 
 export default StyledExperienceSection;

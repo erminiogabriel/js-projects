@@ -12,6 +12,7 @@ h2{
     padding:7.5px
 }
 p{
+    text-align: center;
     font-size:20px;
     padding:7.5px
 }

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import StyledAboutSection from '@/styles/components/about';
+import StyledAboutImage from '@/styles/components/aboutImage';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import Image from 'next/image';
 import code from '../../../public/code.png';
@@ -31,17 +32,15 @@ export default function About() {
 
   return (
     <div id='about' style={{
-      display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center',
+      display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', height: '100vh',
     }}>
 
       <TransitionGroup component={null}>
         {isMounted
             && <CSSTransition key={0} classNames="fadeup" timeout={2000}>
-              <div style={{
-                transitionDelay: '100ms', width: '50%', display: 'flex', justifyContent: 'center',
-              }}>
+              <StyledAboutImage>
                 <Image style={{ width: '80%', height: '80%' }} src={code} alt='Placeholder'/>
-              </div>
+              </StyledAboutImage>
             </CSSTransition>
         }
       </TransitionGroup>
