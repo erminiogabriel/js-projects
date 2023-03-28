@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 const StyledNavbar = styled.nav`
+height: 66px;
 position: fixed;
 top: 0;
 right: 0;

@@ -1,17 +1,23 @@
 import React from 'react';
 import StyledNavbar from '@/styles/components/navbar';
+import { useRouter } from 'next/router';
+import Link from 'next/link';
 
 export default function Navbar() {
+  const router = useRouter();
+
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
-    if (element) {
+    if (element && router.pathname === '/') {
       element.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      router.push('/');
     }
   };
   return (
     <StyledNavbar>
             <div className="container">
-                <a className="navbar-brand" href='#'>Erminio</a>
+              <Link className="navbar-brand" href={'/'}>Erminio</Link>
 
                 <div className="navbar-collapse" id="navbarSupportedContent">
                 <ul className="navbar-nav">

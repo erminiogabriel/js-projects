@@ -43,6 +43,19 @@ width:75%;
 max-width:100%;
 width:100%;
 }
+
+@media (max-width: 425px) {
+height: 125vh;
+h2 {
+  font-size: 45px;
+}
+h1 {
+  font-size: 45px;
+}
+p {
+  font-size: 1rem;
+}
+}
 `;
 
 export default StyledAboutSection;

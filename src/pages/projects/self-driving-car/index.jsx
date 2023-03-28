@@ -4,6 +4,7 @@ import { permute } from '@/utils/self-driving-car/utils';
 import Car from '@/utils/self-driving-car/car.js';
 import NeuralNetwork from '@/utils/self-driving-car/network.js';
 import Road from '@/utils/self-driving-car/road.js';
+import Navbar from '@/components/navbar';
 import CarCanvas from './carCanvas';
 import NetworkCanvas from './networkCanvas';
 import StyledSelfDrivingCar from './style';
@@ -42,6 +43,18 @@ export default function SelfDrivingCarPage() {
 
     setNetworkCanvasData(data);
   };
+
+  async function fetchData() {
+    const response = await fetch('/bestbrain.json');
+    const defaultBrain = await response.json();
+
+    for (let i = 0; i < cars.length; i += 1) {
+      cars[i].brain = JSON.parse(JSON.stringify(defaultBrain));
+      if (i !== 0) {
+        NeuralNetwork.mutate(cars[i].brain, parseFloat(mutationValue));
+      }
+    }
+  }
 
   const startAnimate = () => {
     if (isRunning) {
@@ -119,9 +132,12 @@ export default function SelfDrivingCarPage() {
       for (let i = 0; i < cars.length; i += 1) {
         cars[i].brain = JSON.parse(localStorage.getItem('bestBrain'));
         if (i !== 0) {
+          console.log(cars[i].brain);
           NeuralNetwork.mutate(cars[i].brain, parseFloat(mutationValue));
         }
       }
+    } else {
+      fetchData();
     }
 
     const lanes = [];
@@ -156,8 +172,9 @@ export default function SelfDrivingCarPage() {
             <title>Self-driving car</title>
             <meta http-equiv="X-UA-Compatible" content="IE=edge" />
             <meta name="viewport" content="width=device-width, initial-scale=1" />
-            <link rel="icon" href="/favicon.ico" />
+            <link rel="icon" href="/favicon.png" />
             </Head>
+            <Navbar></Navbar>
 
             <CarCanvas
             data={carCanvasData}

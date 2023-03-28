@@ -38,6 +38,9 @@ button:hover{
 #networkCanvas{
     background:black;
 }
+canvas{
+    align-self: flex-end;
+}
 `;
 
 export default StyledSelfDrivingCar;

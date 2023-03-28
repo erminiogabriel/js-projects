@@ -4,13 +4,13 @@ function CarCanvas({ data, canvasRef }) {
   useEffect(() => {
     const canvas = canvasRef.current;
     canvas.width = 300;
-    canvas.height = window.innerHeight;
+    canvas.height = window.innerHeight - 66;
   }, []);
 
   useEffect(() => {
     const canvas = canvasRef.current;
     const ctx = canvas.getContext('2d');
-    canvas.height = window.innerHeight;
+    canvas.height = window.innerHeight - 66;
 
     if (ctx && data) {
       if (data.cars && data.road && data.traffic) {

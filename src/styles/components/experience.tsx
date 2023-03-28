@@ -6,7 +6,7 @@ flex-direction: column;
 justify-content: center;
 min-height: 100vh;
 height: 100vh;
-padding: 0;
+box-sizing: border-box;
 .inner{
   display: flex;
 }
@@ -49,6 +49,27 @@ h2 {
     -webkit-columns: 1;
     -moz-columns: 1;
   }
+}
+
+@media (max-width: 425px) {
+height: 125vh;
+h2 {
+  font-size: 45px;
+}
+p {
+  font-size: 1rem;
+}
+.inner{
+  display: flex;
+  flex-direction: column;
+}
+.text{
+  width: 100%;
+}
+.technologies{
+  width: 100%;
+  margin: 0;
+}
 }
 
 `;
