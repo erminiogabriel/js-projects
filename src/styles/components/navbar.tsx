@@ -22,7 +22,6 @@ background:#182032;
     align-items: center;
     justify-content: space-between;
 }
-@media (min-width: 1200px)
 .container {
     max-width: 1140px;
 }
@@ -30,11 +29,9 @@ background:#182032;
 .container {
 max-width: 960px;
 }
-@media (min-width: 768px)
 .container {
 max-width: 720px;
 }
-@media (min-width: 576px)
 .container {
 max-width: 540px;
 }
@@ -57,7 +54,7 @@ white-space: nowrap;
 }
 
 .navbar-collapse {
-display: flex!important;
+display: flex;
 flex-basis: auto;
 
 }
@@ -118,6 +115,10 @@ color: #fff;
 text-decoration: none;
 background-color: transparent;
 -webkit-text-decoration-skip: objects;
+}
+@media (max-width: 480px) {
+display: none;
+
 }
 `;
 

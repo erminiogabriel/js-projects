@@ -32,7 +32,7 @@ export default function About() {
 
   return (
     <div id='about' style={{
-      display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', height: '100vh',
+      display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', minHeight: '100vh',
     }}>
 
       <TransitionGroup component={null}>
